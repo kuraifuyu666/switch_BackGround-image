@@ -1,0 +1,24 @@
+body {
+  margin: 0; /* Supprime les marges par défaut */
+  overflow: hidden; /* Empêche le défilement si les images dépassent */
+}
+
+.div {
+  width: 100vw; /* Prend toute la largeur de la fenêtre */
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  background-size: cover; /* Couvre complètement la div */
+  box-shadow: 20px 20px 10px gray;
+  animation: slider 10s linear infinite; /* Animation de 10 secondes */
+}
+
+@keyframes slider {
+  0% { background-image: url(images/samourai1.png); }
+  20% { background-image: url(images/samourai1.png); } /* Maintient l'image 1 */
+  25% { background-image: url(images/samourai2.png); }
+  45% { background-image: url(images/samourai2.png); } /* Maintient l'image 2 */
+  50% { background-image: url(images/samourai3.png); }
+  70% { background-image: url(images/samourai3.png); } /* Maintient l'image 3 */
+  75% { background-image: url(images/samourai4.png); }
+  95% { background-image: url(images/samourai4.png); } /* Maintient l'image 4 */
+  100% { background-image: url(images/samourai1.png); } /* Retour à la première image sans saccade */
+}
